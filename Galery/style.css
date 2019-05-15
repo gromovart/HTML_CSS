@@ -1,0 +1,390 @@
+input[name="raz"] {
+  display: none;
+}
+
+section {
+  max-width: 100%;
+  text-align: center;
+  white-space: nowrap;
+}
+[class^="galery"] {
+  height: 300px;
+  width: 100%;
+}
+
+.galery-1 {
+  display: none;
+}
+
+.galery-2 {
+  display: none;
+}
+
+.galery-3 {
+  display: none;
+}
+
+.galery-4 {
+  display: none;
+}
+
+.galery-5 {
+  display: none;
+}
+
+#raz1:checked ~ section > .galery-1 {
+  display: block;
+
+}
+#raz2:checked ~ section > .galery-2 {
+  display: block;
+
+}
+#raz3:checked ~ section > .galery-3 {
+  display: block;
+}
+#raz4:checked ~ section > .galery-4 {
+  display: block;
+}
+#raz5:checked ~ section > .galery-5 {
+  display: block;
+}
+
+.card {
+  display: inline-block;
+  width: 20%;
+  margin: 10px;
+  padding: 5px;
+  vertical-align: top;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0 0 40px #272b33;
+}
+.image {
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+}
+
+.image img {
+  max-width: 100%;
+}
+
+
+.image :hover {
+  opacity: 0.7;
+}
+.description {
+  position: relative;
+  white-space: normal;
+  display: none;
+  z-index: 10;
+  background-color: white;
+}
+
+.card:hover .description {
+  position: relative;
+  display: block;
+  z-index: 100;
+}
+
+.button-controls {
+  display: inline-block;
+  margin-left: -98px;
+  position: relative;
+}
+
+.button-controls label {
+  cursor: pointer;
+  display: inline-block;
+  height: 8px;
+  margin: 45px 12px 0 16px;
+  position: relative;
+  width: 8px;
+  border-radius: 50%;
+}
+
+.button-controls label:after {
+  display: inline-block;
+  border: 2px solid #ddd;
+  content: " ";
+  display: block;
+  height: 12px;
+  left: -4px;
+  position: relative;
+  top: -4px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+section label:hover, 
+#raz1:checked ~ section >.button-controls label:nth-of-type(1),
+#raz2:checked ~ section >.button-controls label:nth-of-type(2),
+#raz3:checked ~ section >.button-controls label:nth-of-type(3),
+#raz4:checked ~ section >.button-controls label:nth-of-type(4),
+#raz5:checked ~ section >.button-controls label:nth-of-type(5) {
+  background: #ddd;
+}
+
+.mymodal:target {
+  display: block;
+}
+
+.mymodal {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 999;
+}
+
+
+
+
+#okno {
+  max-width: 800px;
+  max-height: 100%;
+  text-align: center;
+  padding:4%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+
+.close {
+  position: absolute;
+  right: .1em;
+  top: 1em;
+  width: 32px;
+  height: 38px;
+  z-index: 999;
+}
+.close:hover {
+  background: red;
+
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 38px;
+  width: 4px;
+  background-color: white;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.img-1 {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  background: url(img/1.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.img-2 {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  background: url(img/2.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.img-3 {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  background: url(img/3.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.img-4 {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  background: url(img/4.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.img-5 {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  background: url(img/4.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.img-6 {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  background: url(img/6.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.img-7 {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  background: url(img/7.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.img-8 {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  background: url(img/8.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.img-9 {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  background: url(img/8.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.img-10 {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  background: url(img/10.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+
+.img-11 {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  background: url(img/11.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.img-12 {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  background: url(img/12.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.img-13 {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  background: url(img/12.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.img-14 {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  background: url(img/14.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+
+.img-15 {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  background: url(img/15.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.img-16 {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  background: url(img/16.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.img-17 {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  background: url(img/16.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.img-18 {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  background: url(img/18.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.img-19 {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  background: url(img/19.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.img-20 {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  background: url(img/20.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
